@@ -1,1 +1,3 @@
 "# my-angular-course"  initgit add README.mdgit commit -m "first commit"git remote add origin https://github.com/georgewoizesko/my-angular-course.gitgit push -u origin master
+George Woizesko
+05/13/2019
