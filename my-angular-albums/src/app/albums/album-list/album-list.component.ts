@@ -17,8 +17,6 @@ export class AlbumListComponent implements OnInit {
     this.numbers.push(4);
     console.log(this.numbers);
     this.numbers = [...this.numbers];
-    this.albumsArray[0].price += 10;
-
     console.log(this.albumsArray);
     this.albumsArray = [
       {
@@ -63,5 +61,9 @@ export class AlbumListComponent implements OnInit {
         duration: "1:33:43",
         url: "https://www.allmusic.com/album/the-beatles-white-album-mw0000418113"
       }];
+    this.albumsArray[0].price += 10;
     }
+    parentFunctionHandler(album) {
+      alert('Album ' + album.albumName + ' was sent from the album card component');
+  }
   }
