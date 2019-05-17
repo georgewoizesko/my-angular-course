@@ -12,6 +12,10 @@ export class AlbumService {
 
   constructor(private http: HttpClient) { }
 
+  getAlbumById(id: number): Observable<Album> {
+    return this.http.get<Album>(this.url + "/" + id);
+  }
+
   getAlbums(): Observable<Album[]> {
        return this.http.get<Album[]>(this.url);
   }
